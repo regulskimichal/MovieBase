@@ -15,8 +15,7 @@ public interface OnItemClickListener {
      * Implementers can call getChildAt(position) if they need to access the data associated with
      * the selected item.
      *
-     * @param view The view within the AdapterView that was clicked (this will be a view provided
-     *             by the adapter)
+     * @param view     The view within the AdapterView that was clicked (this will be a view provided by the adapter)
      * @param position The position of the view in the adapter.
      */
     public void onItemClick(View view, int position);

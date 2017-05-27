@@ -10,13 +10,22 @@ import android.widget.AbsListView;
  * elements.
  */
 public interface ViewAdapter {
+
     Context getContext();
+
     int getWidth();
+
     int getChildCount();
+
     void getLocationOnScreen(int[] locations);
+
     View getChildAt(int index);
+
     int getChildPosition(View position);
+
     void requestDisallowInterceptTouchEvent(boolean disallowIntercept);
+
     void onTouchEvent(MotionEvent e);
+
     Object makeScrollListener(AbsListView.OnScrollListener listener);
 }

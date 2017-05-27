@@ -2,14 +2,14 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/txt_data"
+    android:id="@+id/data"
     android:layout_width="match_parent"
     android:layout_height="80dp"
     android:background="@android:color/white"
     android:padding="@dimen/margin">
 
     <ImageView
-        android:id="@+id/miniatureIV"
+        android:id="@+id/posterIV"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:contentDescription="@string/miniature"
@@ -26,20 +26,10 @@
         android:textColor="@color/colorPrimary"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/genreTV"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/miniatureIV"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Title" />
-
-    <TextView
-        android:id="@+id/genreTV"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/miniatureIV"
-        tools:text="Genre" />
+        app:layout_constraintStart_toEndOf="@id/posterIV"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
 
 </android.support.constraint.ConstraintLayout>

@@ -2,12 +2,13 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movieDetails"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.MovieDetailsActivity">
 
     <ImageView
-        android:id="@+id/categoryIV"
+        android:id="@+id/backdropIV"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/image_description"
@@ -25,10 +26,13 @@
         app:layout_constraintGuide_percent=".3" />
 
     <TextView
-        android:id="@+id/titleTV"
+        android:id="@+id/titleDetailsTV"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="@dimen/margin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline" />
@@ -42,16 +46,16 @@
         app:layout_constraintBottom_toTopOf="@+id/scrollView"
         app:layout_constraintEnd_toStartOf="@+id/ratingBar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleTV" />
+        app:layout_constraintTop_toBottomOf="@id/titleDetailsTV" />
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:numStars="5"
-        android:stepSize="0.5"
+        android:stepSize="0.1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleTV" />
+        app:layout_constraintTop_toBottomOf="@id/titleDetailsTV" />
 
     <ScrollView
         android:id="@+id/scrollView"

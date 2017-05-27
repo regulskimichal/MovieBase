@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class SwipeableItemClickListener implements RecyclerView.OnItemTouchListener {
+
     private final OnItemClickListener mListener;
 
     private final GestureDetector mGestureDetector;
