@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actorImagesCL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <swim.regulski.moviebase.libs.SquareImageView
+        android:id="@+id/actor1SIV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/actor2SIV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <swim.regulski.moviebase.libs.SquareImageView
+        android:id="@+id/actor2SIV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/actor5SIV"
+        app:layout_constraintEnd_toStartOf="@+id/actor3SIV"
+        app:layout_constraintStart_toEndOf="@id/actor1SIV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <swim.regulski.moviebase.libs.SquareImageView
+        android:id="@+id/actor3SIV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/actor2SIV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <swim.regulski.moviebase.libs.SquareImageView
+        android:id="@+id/actor4SIV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/actor5SIV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <swim.regulski.moviebase.libs.SquareImageView
+        android:id="@+id/actor5SIV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/actor6SIV"
+        app:layout_constraintStart_toEndOf="@id/actor4SIV"
+        app:layout_constraintTop_toBottomOf="@id/actor2SIV" />
+
+    <swim.regulski.moviebase.libs.SquareImageView
+        android:id="@+id/actor6SIV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/actor5SIV" />
+
+</android.support.constraint.ConstraintLayout>

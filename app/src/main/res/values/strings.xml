@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">MovieBase</string>
     <string name="title_main_activity">MovieBase</string>
     <string name="genre">Genre</string>
     <string name="year">Year</string>
@@ -7,12 +8,10 @@
     <string name="description">Description</string>
     <string name="image_description">Image description</string>
     <string name="title_movie_details_activity">Movie details</string>
-    <string name="undefined">Undefined</string>
-    <string name="action">Action</string>
-    <string name="animation">Animation</string>
-    <string name="science_fiction">Science Fiction</string>
-    <string name="app_name">MovieBase</string>
+    <string name="movie_details">Movie details</string>
+    <string name="actors">Actors</string>
     <string name="deleted">Deleted</string>
     <string name="undo">UNDO</string>
     <string name="miniature">Miniature</string>
+    <string name="_as">As</string>
 </resources>

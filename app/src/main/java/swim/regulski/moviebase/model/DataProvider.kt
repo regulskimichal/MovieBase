@@ -9,9 +9,9 @@ object DataProvider {
 
     val tmdb: TmdbApi = TmdbApi(APIKEY)
     val movieList: MutableList<Movie> = ArrayList()
-    val posterSizes: List<String> = tmdb.configuration.posterSizes
-    val backdropSizes: List<String> = tmdb.configuration.backdropSizes
-    val profileSizes: List<String> = tmdb.configuration.profileSizes
+    val posterSizes: List<String?> = tmdb.configuration.posterSizes
+    val backdropSizes: List<String?> = tmdb.configuration.backdropSizes
+    val profileSizes: List<String?> = tmdb.configuration.profileSizes
 
     private val tmdbMovies = tmdb.movies
 

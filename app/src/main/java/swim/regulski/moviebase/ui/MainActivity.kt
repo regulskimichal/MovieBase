@@ -1,12 +1,11 @@
 package swim.regulski.moviebase.ui
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
-import android.util.Log
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import kotlinx.android.synthetic.main.activity_main.*
@@ -23,12 +22,13 @@ import swim.regulski.moviebase.libs.SwipeableItemClickListener
 import swim.regulski.moviebase.model.DataProvider
 
 @Suppress("EXPERIMENTAL_FEATURE_WARNING")
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
     private val timeToDismiss = 5000L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setSupportActionBar(mainToolbar)
 
         setupRV()
     }
@@ -82,9 +82,5 @@ class MainActivity : Activity() {
                         }
                     }
                 })
-    }
-
-    private fun Any.log() {
-        Log.d(this::class.qualifiedName, this.toString())
     }
 }

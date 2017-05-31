@@ -34,7 +34,7 @@ import android.widget.ListView;
  * A {@link View.OnTouchListener} that makes the list items in a collection view
  * dismissable.
  * It is given special treatment because by default it handles touches for its list items...
- * i.e. it's in charge of drawing the pressed state (the list selector), handling list item
+ * i.e. it's in charge of drawing the pressed state (the bigActorImages selector), handling bigActorImages item
  * clicks, etc.
  * <p>
  * <p>After creating the listener, the caller should also call
